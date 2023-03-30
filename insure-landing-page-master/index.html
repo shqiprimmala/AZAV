@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Karla:400,700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Insure landing page</title>
+</head>
+<body>
+
+  <!-- desktop navigation -->
+  <nav class="first-nav">
+    <img src="images/logo.svg">
+    <ul>
+      <li> <a href=""> How we work</a> </li>
+      <li> <a href="#"> Blog</a> </li>
+      <li> <a href="#">Account</a> </li>
+      <li> <a class="active" href="#viewplans">View plans</a> </li>
+    </ul>
+  </nav>
+
+  <!-- mobile navigation -->
+  <nav class="another-nav">
+    <ul>
+      <li><img class="logo" src="images/logo.svg"> </li>
+      <li class="dropdown">
+        <div class="hamburger-container">
+          <div class="dropbtn" id="hamburger">
+            <div class="bar top"></div>
+            <div class="bar middle"></div>
+            <div class="bar bottom"></div>
+        </div>
+        
+          <div class="dropdown-content">
+            <a href=""> How we work</a> 
+            <a href="#"> Blog</a>
+            <a href="#">Account</a>
+            <a href="">View plans</a>
+            <img class="dropdown-image" src="images/bg-pattern-mobile-nav.svg">
+          </div>
+      </div>
+      </li>
+    </ul>
+  </nav>
+
+<!-- Desktop header -->
+  <header class="header1">
+    
+    <div class="header1-div">
+      <hr>
+      <h1> Humanizing<br> your insurance.</h1>
+      <img class="designhead" src="images/bg-pattern-intro-right-desktop.svg">
+      <p>
+        Get your life insurance coverage easier and faster. We blend our expertise
+        and technology to help you find the plan that’s right for you. Ensure you
+        and your loved ones are protected.
+      </p>
+      <button id="viewplans" type="button">View plans</button>
+      <img class="imagelower" src="images/bg-pattern-intro-left-desktop.svg">
+    </div>
+    <img class="man"  src="images/image-intro-desktop.jpg">
+  </header>
+
+  <!-- mobile header -->
+  <header class="header2">
+  <img class="man2" src="images/image-intro-mobile.jpg">
+  <div>
+    <h1> Humanizing your insurance.</h1>
+    <img class="designhead2" src="images/bg-pattern-intro-left-mobile.svg">
+    <p>
+      Get your life insurance coverage easier and faster. We blend our expertise
+      and technology to help you find the plan that’s right for you. Ensure you
+      and your loved ones are protected.
+    </p>
+    <button id="viewplans" type="button">View plans</button>
+    <img class="imagelower2" src="images/bg-pattern-intro-right-mobile.svg">
+  </div>
+  </header>
+  
+ 
+  <section class="wrapper">
+    <!-- main -->
+    <main>
+      <hr>
+
+      <p class="h2">We’re different</p>
+      <section class="differnt-wrapper">
+        <section class="differnt-section">
+          <img src="images/icon-snappy-process.svg">
+          <h3>Snappy Process</h3>
+          <p> Our application process can be completed in minutes, not hours. Don’t get 
+            stuck filling in tedious forms.</p>
+        </section>
+    
+        <section class="differnt-section">
+          <img src="images/icon-affordable-prices.svg">
+          <h3> Affordable Prices </h3>
+          <p>We don’t want you worrying about high monthly costs. Our prices may be low, 
+            but we still offer the best coverage possible.
+          </p>
+        </section>
+    
+        <section class="differnt-section">
+          <img src="images/icon-people-first.svg">
+          <h3>People First</h3>
+          <p>Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+            sure you’re covered when you need it.</p>
+        </section>
+
+      </section>
+      
+  
+      <div id="how-we-work">
+          <p class="how-we-work-para">Find out more about how we work </p>
+          <img class="second-how-we-work-img" src="images/bg-pattern-how-we-work-desktop.svg">
+          <img class="third-how-we-work-img" src="images/bg-pattern-how-we-work-mobile.svg">
+          <button type="button"> How we work</button>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <img id="desktop-svg1" src="images/bg-pattern-footer-desktop.svg">
+      <img id="desktop-svg2" src="images/bg-pattern-footer-mobile.svg">
+      
+      <main>
+        <nav class="footer-nav">
+          <img src="images/logo.svg">
+          <ul>
+            
+            <li> <a class="icon" href="#"><i class="fa fa-3x fa-facebook-square"></i></a>
+            </li>
+            <li> <a class="icon" href="#"><i class="fa fa-3x fa-twitter"></i></a>
+            </li>
+            <li> <a class="icon" href="#"><i class="fa fa-3x fa-pinterest"></i></a>
+            </li>
+            <li> <a class="icon" href="#"><i class="fa fa-3x fa-instagram"></i></a>
+            </li>
+          </ul>
+      </nav>
+      
+      
+        <div class="footer-div">
+          <section class="our-company">
+            <h4>our company</h4>
+            <p> <a href="">How we work</a> </p>
+            <p> <a href="">Why Insure?</a> </p>
+            <p> <a href="">View Plans</a> </p>
+            <p> <a href="">Reviews</a> </p>
+          </section>
+      
+          <section class="help-me">
+            <h4>Help me</h4>
+            <p> <a href="">FAQ</a> </p>
+            <p> <a href="">Terms of use</a> </p>
+            <p> <a href="">Privacy policy</a> </p>
+            <p> <a href="">Cookies</a> </p>
+          </section>
+      
+          <section class="contact">
+            <h4>Contact</h4>
+            <p> <a href="">Sales</a> </p>
+            <p> <a href=""> Support</a> </p>
+            <p> <a href=""> Live chat</a> </p>
+          </section>
+      
+          <section class="others">
+            <h4>Others</h4>
+            <p> <a href=""></a> </p>
+            <p> <a href="">Careers</a> </p>
+            <p> <a href="">Press</a> </p>
+          </section>
+      
+        </div>
+  
+      
+      </main>
+     
+      
+       <div class="attribution"> 
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">
+        Moronfolu Olufunke
+      </a>.
+    </div>
+    </footer>
+  
+  
+
+  </section>
+</body>
+</html>
