@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* makes body small in mobile version and pictures static */
+body{
+    background-color: #9CD2AE;
+    /* switch off "width" to see effect */
+    width: 350px; 
+    
+    margin: 0 auto;
+    height: 100%;
+}
+/*-------------------------------------------------------
+Header
+-------------------------------------------------------*/
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 200px;
+    font-size: 24px;
+    /* font-family: Inter; */
+    color: black;
+}
+.heroImage {
+    background-image: url('https://images.unsplash.com/photo-1495461199391-8c39ab674295?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80');
+    background-size: cover;
+    height: 200px;
+    margin-top: 10px;
+    vertical-align: bottom;
+}
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 180px;
+}
+.navbar a{
+    background-color: #D67C2A;
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 8px 4px;
+    color: #FFFFFF;
+    text-align: center;
+}
+/*-------------------------------------------------------
+Main
+-------------------------------------------------------*/
+.items {
+    height: 272px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    margin: 20px 0;
+}
+.title{
+    background-color: #D67C2A;
+    font-size: 20px;
+    padding: 8px;
+    align-self: flex-end;
+    width: 60%;
+    border-radius: 0px 6px 6px 0px;
+    margin-bottom: 30px;
+}
+/*-------------------------------------------------------
+Footer
+-------------------------------------------------------*/
+footer{
+    background-color: #3C5444;
+    height: 79px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+/*-------------------------------------------------------
+Images
+-------------------------------------------------------*/
+
+    
+.bruschetta {
+    background-image: url('https://images.unsplash.com/photo-1506280754576-f6fa8a873550?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
+}
+.carbonara {background-image: url('https://images.unsplash.com/photo-1627207644206-a2040d60ecad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
+}
+.ceasar {background-image: url('https://images.unsplash.com/photo-1550304943-4f24f54ddde9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80');
+}
+.tiramisu {background-image: url('https://images.unsplash.com/photo-1567588988863-bb7ca30a5914?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80');
+}
+/*-------------------------------------------------------
+media query
+-------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+    body {
+        width: 768px;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 39px;
+        gap: 16px;
+        margin: 36px 0;
+    }
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    /* make cards a bit larger */
+    .items {
+        width: 360px;
+    }
+    /* make banner a bit larger */
+    .headImg {
+        height: 243px;
+    }
+    footer {
+        height: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 4px 14px;
+        margin-top: 40px;
+    }
+} @media only screen and (min-width: 1200px) {
+    body {
+        width: 1155px;
+    }
+    /* make cards again a bit larger */
+    .items {
+        width: 280px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+ }
