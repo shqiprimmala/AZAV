@@ -1,0 +1,40 @@
+<!-- https://www.youtube.com/watch?v=neb7WcDixoY -->
+<!-- https://github.com/TylerPottsDev/html-responsive-sidebar -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive Navbar Core</title>
+	<link rel="stylesheet" href="main_core.css" />
+</head>
+<body>
+	<div class="app">
+		<!-- hamburger -->
+		<div class="menu-toggle"> 
+			<button id="hamburer">Hamburger</button>
+		</div>
+
+		<aside class="sidebar">
+						
+			<nav class="menu">
+				<a href="#" class="menu-item">Home</a>
+				<a href="#" class="menu-item">About</a>
+				<a href="#" class="menu-item">Portfolio</a>
+				<a href="#" class="menu-item">Contact</a>
+			</nav>
+		</aside>
+	</div>
+
+	<script>
+		const menu_toggle = document.querySelector('#hamburer');
+		const sidebar = document.querySelector('.sidebar');
+		// listen on button click
+		menu_toggle.addEventListener('click', () => {
+			sidebar.classList.toggle('is-active'); // change class attribute
+		});
+	</script>
+</body>
+</html>

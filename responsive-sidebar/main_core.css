@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.menu-toggle {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+}
+
+.sidebar .menu .menu-item {
+  display: block;
+  padding: 1em;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+
+.sidebar {
+  min-width: 300px;
+  height: 100vh;
+  padding: 2rem 1rem;
+  background-color: #2e3047;
+
+  position: fixed; /* fixed on left side */
+  top: 0;
+  left: -300px; /* hiding on left side */  
+  transition: 0.2s linear;
+}
+
+.sidebar.is-active {
+  left: 0; /* unhide by positioning on left border */
+}
