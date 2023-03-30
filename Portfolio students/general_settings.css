@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --main-brand-color: #297ae3;
+  --primary-color: #15171c;
+  --secondary-color: #232933;
+  --light-secondary-color: #2e3744;
+  --text-color: white;
+  --secondary-text-color: #b3b4b6;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* @font-face {
+  font-family: 'Poppins' ;
+  src: url("https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+} */
+body {
+    font-family: 'Poppins',sans-serif ;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+p{
+    color: var(--secondary-text-color);
+}

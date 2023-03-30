@@ -1,0 +1,26 @@
+header{
+    padding: 50px 25px;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-size: 40px;
+}
+nav{
+    margin-bottom: 20px;
+}
+nav a {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+
+}
+.heroimage {
+    background-image: url(./images/pexels-photo-2379005.jpeg);
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    border-radius: 50%;
+    border: 10px solid var(--main-brand-color);
+    margin-top: 20px;
+    align-self: center;
+}
